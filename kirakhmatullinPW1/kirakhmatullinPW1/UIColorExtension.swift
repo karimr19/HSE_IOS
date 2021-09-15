@@ -24,33 +24,17 @@ extension UIColor {
         // Removes first "#" symbol.
         hexParsed = hexParsed.replacingOccurrences(of: "#", with: "")
         // Will store the hexadecimal value as an unsigned integer.
-        var rgb: UInt32 = 0
+        var rgb: UInt64 = 0
         var r: CGFloat = 0.0
         var g: CGFloat = 0.0
         var b: CGFloat = 0.0
-        var a: CGFloat = 1.0
-        let length = hexParsed.count
         //  Scans the string for a hexadecimal representation.
-        guard Scanner(string: hexParsed).scanHexInt32(&rgb) else { return nil }
-        // Extracts the red, green, and blue color components of the value stored in rgb depending on the length of the string.
+        guard Scanner(string: hexParsed).scanHexInt64(&rgb) else { return nil }
+        // Extracts the red, green, and blue color components of the value stored in rgb.
         r = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
         g = CGFloat((rgb & 0x00FF00) >> 8) / 255.0
         b = CGFloat(rgb & 0x0000FF) / 255.0
-//        if length == 6 {
-//            r = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
-//            g = CGFloat((rgb & 0x00FF00) >> 8) / 255.0
-//            b = CGFloat(rgb & 0x0000FF) / 255.0
-//
-//        } else if length == 8 {
-//            r = CGFloat((rgb & 0xFF000000) >> 24) / 255.0
-//            g = CGFloat((rgb & 0x00FF0000) >> 16) / 255.0
-//            b = CGFloat((rgb & 0x0000FF00) >> 8) / 255.0
-//            a = CGFloat(rgb & 0x000000FF) / 255.0
-//
-//        } else {
-//            return nil
-//        }
         // Creating the UIColor instance.
-        self.init(red: r, green: g, blue: b, alpha: a)
+        self.init(red: r, green: g, blue: b, alpha: 1.0)
     }
 }
