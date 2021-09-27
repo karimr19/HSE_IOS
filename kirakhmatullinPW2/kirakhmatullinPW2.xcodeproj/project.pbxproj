@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A55FBF3270266A800DE833A /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A55FBF2270266A800DE833A /* CustomSlider.swift */; };
+		8AEF8F7626FA611000546020 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF8F7526FA611000546020 /* SettingsViewController.swift */; };
 		8AF5651C26F9C372008ACACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5651B26F9C372008ACACA /* AppDelegate.swift */; };
 		8AF5651E26F9C372008ACACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5651D26F9C372008ACACA /* SceneDelegate.swift */; };
 		8AF5652026F9C372008ACACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5651F26F9C372008ACACA /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A55FBF2270266A800DE833A /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		8AEF8F7526FA611000546020 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8AF5651826F9C372008ACACA /* kirakhmatullinPW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kirakhmatullinPW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF5651B26F9C372008ACACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF5651D26F9C372008ACACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,9 +61,11 @@
 				8AF5651B26F9C372008ACACA /* AppDelegate.swift */,
 				8AF5651D26F9C372008ACACA /* SceneDelegate.swift */,
 				8AF5651F26F9C372008ACACA /* ViewController.swift */,
+				8AEF8F7526FA611000546020 /* SettingsViewController.swift */,
 				8AF5652426F9C374008ACACA /* Assets.xcassets */,
 				8AF5652626F9C374008ACACA /* LaunchScreen.storyboard */,
 				8AF5652926F9C374008ACACA /* Info.plist */,
+				8A55FBF2270266A800DE833A /* CustomSlider.swift */,
 			);
 			path = kirakhmatullinPW2;
 			sourceTree = "<group>";
@@ -134,8 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AF5652026F9C372008ACACA /* ViewController.swift in Sources */,
+				8A55FBF3270266A800DE833A /* CustomSlider.swift in Sources */,
 				8AF5651C26F9C372008ACACA /* AppDelegate.swift in Sources */,
 				8AF5651E26F9C372008ACACA /* SceneDelegate.swift in Sources */,
+				8AEF8F7626FA611000546020 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
