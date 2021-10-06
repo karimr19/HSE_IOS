@@ -15,6 +15,7 @@
 		8A95465D270D965400D97E23 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A95465C270D965400D97E23 /* StackViewController.swift */; };
 		8A95465F270D96B300D97E23 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A95465E270D96B300D97E23 /* TableViewController.swift */; };
 		8A954661270D96ED00D97E23 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A954660270D96ED00D97E23 /* CollectionViewController.swift */; };
+		8A954663270DAC7900D97E23 /* UIView_Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A954662270DAC7900D97E23 /* UIView_Pin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8A95465C270D965400D97E23 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		8A95465E270D96B300D97E23 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8A954660270D96ED00D97E23 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		8A954662270DAC7900D97E23 /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_Pin.swift; path = ../../../../Downloads/UIView_Pin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		8A954647270D8FC300D97E23 /* kirakhmatullinPW3 */ = {
 			isa = PBXGroup;
 			children = (
+				8A954662270DAC7900D97E23 /* UIView_Pin.swift */,
 				8A954648270D8FC300D97E23 /* AppDelegate.swift */,
 				8A95464A270D8FC300D97E23 /* SceneDelegate.swift */,
 				8A95464C270D8FC300D97E23 /* ViewController.swift */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A954663270DAC7900D97E23 /* UIView_Pin.swift in Sources */,
 				8A954661270D96ED00D97E23 /* CollectionViewController.swift in Sources */,
 				8A95464D270D8FC300D97E23 /* ViewController.swift in Sources */,
 				8A95465D270D965400D97E23 /* StackViewController.swift in Sources */,
