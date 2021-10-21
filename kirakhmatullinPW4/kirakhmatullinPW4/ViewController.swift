@@ -16,7 +16,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(createNote(sender:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(createNote(sender:)))
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -28,17 +28,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionView.dequeueReusableCell(withReuseIdentifier:
         "NoteCell", for: indexPath) as! NoteCell
         cell.titleLabel.text = "Yeah"
-        cell.descriptionLabel.text = "That's greate"
+        cell.descriptionLabel.text = "That's great"
         return cell
     }
     
-//    @objc func createNote(sender: UIBarButtonItem) {
-//        guard let vc = storyboard?.instantiateViewController(withIdentifier:
-//            "NoteVewController") else {
-//                return
-//        }
-//        navigationController?.pushViewController(vc, animated: true)
-//    }
+    @objc func createNote(sender: UIBarButtonItem) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier:
+            "NoteViewController") else {
+                return
+        }
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 
