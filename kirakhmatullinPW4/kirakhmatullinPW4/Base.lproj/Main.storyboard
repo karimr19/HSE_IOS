@@ -29,7 +29,7 @@
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NoteCell" id="4vK-vG-EBw" customClass="NoteCell" customModule="kirakhmatullinPW4" customModuleProvider="target">
                                         <rect key="frame" x="40.5" y="15" width="333" height="96"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PXe-hv-KEN">
                                             <rect key="frame" x="0.0" y="0.0" width="333" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
@@ -41,21 +41,20 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPH-kJ-vM4">
-                                                    <rect key="frame" x="240" y="38" width="41.5" height="21"/>
+                                                    <rect key="frame" x="240" y="38" width="41.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="e23-YW-n2B" firstAttribute="top" secondItem="PXe-hv-KEN" secondAttribute="top" constant="38" id="5d5-Fw-lGa"/>
                                                 <constraint firstItem="vPH-kJ-vM4" firstAttribute="leading" secondItem="e23-YW-n2B" secondAttribute="trailing" constant="142" id="A0U-1b-8wr"/>
-                                                <constraint firstAttribute="trailing" secondItem="vPH-kJ-vM4" secondAttribute="trailing" constant="51.5" id="SRl-BV-VOh"/>
-                                                <constraint firstItem="e23-YW-n2B" firstAttribute="leading" secondItem="PXe-hv-KEN" secondAttribute="leading" constant="56" id="Z2K-hT-Mb4"/>
-                                                <constraint firstItem="vPH-kJ-vM4" firstAttribute="top" secondItem="PXe-hv-KEN" secondAttribute="top" constant="38" id="cY8-SA-rFv"/>
-                                                <constraint firstAttribute="bottom" secondItem="e23-YW-n2B" secondAttribute="bottom" constant="37" id="gd3-Og-koN"/>
-                                                <constraint firstAttribute="bottom" secondItem="vPH-kJ-vM4" secondAttribute="bottom" constant="37" id="kBE-CI-Veo"/>
-                                                <constraint firstItem="e23-YW-n2B" firstAttribute="top" secondItem="PXe-hv-KEN" secondAttribute="top" constant="38" id="oVC-xX-96Z"/>
-                                                <constraint firstItem="vPH-kJ-vM4" firstAttribute="leading" secondItem="e23-YW-n2B" secondAttribute="trailing" constant="142" id="uQI-cI-62f"/>
+                                                <constraint firstAttribute="bottom" secondItem="vPH-kJ-vM4" secondAttribute="bottom" constant="37.5" id="O2M-wd-a8I"/>
+                                                <constraint firstItem="e23-YW-n2B" firstAttribute="leading" secondItem="PXe-hv-KEN" secondAttribute="leading" constant="56" id="PlN-Hi-hG0"/>
+                                                <constraint firstAttribute="trailing" secondItem="vPH-kJ-vM4" secondAttribute="trailing" constant="51.5" id="SYw-pT-3Si"/>
+                                                <constraint firstAttribute="bottom" secondItem="e23-YW-n2B" secondAttribute="bottom" constant="37" id="Upp-p2-pod"/>
+                                                <constraint firstItem="vPH-kJ-vM4" firstAttribute="top" secondItem="PXe-hv-KEN" secondAttribute="top" constant="38" id="tx7-bk-VDq"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.86228684247024867" green="0.73410699547480673" blue="0.96699744462966919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
