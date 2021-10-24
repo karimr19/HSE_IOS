@@ -1,17 +1,18 @@
 //
-//  AlarmView.swift
+//  HorizontalAlarmView.swift
 //  kirakhmatullinPW3
 //
-//  Created by Karim on 06.10.2021.
+//  Created by Karim on 24.10.2021.
 //
 
 import UIKit
-final class AlarmView: UIView {
-    
-    func setupAlarmView(hours: Int, minutes: Int, isActive: Bool, leftAnchor: NSLayoutXAxisAnchor,
-                        rightAnchor: NSLayoutXAxisAnchor) {
+
+class VerticalAlarmView: UIView {
+    func setupVerticalAlarmView(hours: Int, minutes: Int, isActive: Bool,
+                                leftAnchor: NSLayoutXAxisAnchor,
+                                rightAnchor: NSLayoutXAxisAnchor) {
         pinRight(to: rightAnchor)
-        pinLeft(to: leftAnchor, 10)
+        pinLeft(to: leftAnchor)
         setHeight(to: 50)
         
         // TODO: change logic to allow user input his time

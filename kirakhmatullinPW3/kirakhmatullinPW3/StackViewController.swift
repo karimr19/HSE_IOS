@@ -9,58 +9,55 @@ import Foundation
 import UIKit
 
 final class StackViewController: UIViewController {
-    private var stack: UIStackView?
-    private var scroll: UIScrollView?
+    private var stack = UIStackView()
+    private var scroll = UIScrollView()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple
         setupScroll()
         setupStackView()
+        generateAlarms()
         
         let separatorView = SeparatorView()
-        stack?.addArrangedSubview(separatorView)
-        separatorView.setUpSeparatorView(leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
-        for _ in 0..<23 {
-            let alarmView = AlarmView()
-            stack?.addArrangedSubview(alarmView)
-            alarmView.setupAlarmViewDefault(leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
-            if let scroll = scroll {
-                alarmView.pinWidth(to: scroll.widthAnchor)
-            }
-            let separatorView = SeparatorView()
-            stack?.addArrangedSubview(separatorView)
-            separatorView.setUpSeparatorView(leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
-        }
+        stack.addArrangedSubview(separatorView)
+        separatorView.setUpSeparatorView(leftAnchor: stack.leadingAnchor, rightAnchor: stack.trailingAnchor)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        scroll?.contentSize = CGSize(
-            width: scroll!.frame.width, height: self.stack!.frame.height)
+        scroll.contentSize = CGSize(
+            width: scroll.frame.width, height: self.stack.frame.height)
     }
     
     
     private func setupStackView() {
-        let stack = UIStackView(frame: .zero)
-        scroll?.addSubview(stack)
-        if let scroll = scroll {
-            stack.pin(to: scroll)
-        }
+        scroll.addSubview(stack)
+        stack.pin(to: scroll)
         stack.backgroundColor = .white
         stack.axis = .vertical
-        scroll?.showsVerticalScrollIndicator = false
-        scroll?.showsHorizontalScrollIndicator = false
-        self.stack = stack
+        scroll.showsVerticalScrollIndicator = false
+        scroll.showsHorizontalScrollIndicator = false
     }
     
     private func setupScroll() {
-        let scroll = UIScrollView(frame: .zero)
         view.addSubview(scroll)
         scroll.pinTop(to:view.safeAreaLayoutGuide.topAnchor)
         scroll.pinBottom(to: view.safeAreaLayoutGuide.bottomAnchor)
         scroll.pin(to:view, .left, .right)
         scroll.backgroundColor = .white
         scroll.alwaysBounceVertical = true
-        self.scroll = scroll
+    }
+    
+    private func generateAlarms() {
+        for _ in 0..<23 {
+            let alarmView = AlarmView()
+            stack.addArrangedSubview(alarmView)
+            let minutes: Int = Int.random(in: 0...1440)
+            alarmView.setupAlarmView(hours: minutes / 60, minutes: minutes % 60, isActive: Bool.random(), leftAnchor: stack.leadingAnchor, rightAnchor: stack.trailingAnchor)
+            alarmView.pinWidth(to: scroll.widthAnchor)
+            let separatorView = SeparatorView()
+            stack.addArrangedSubview(separatorView)
+            separatorView.setUpSeparatorView(leftAnchor: stack.leadingAnchor, rightAnchor: stack.trailingAnchor)
+        }
     }
 }

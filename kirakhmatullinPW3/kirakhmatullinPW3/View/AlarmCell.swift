@@ -10,7 +10,7 @@ import UIKit
 final class AlarmCell: UITableViewCell {
     func setupAlarm(contentAlarm: AlarmModel) {
         setHeight(to: 50)
-        var alarmView = AlarmView()
+        let alarmView = AlarmView()
         addSubview(alarmView)
         alarmView.setupAlarmView(hours: contentAlarm.hours, minutes: contentAlarm.minutes, isActive: contentAlarm.isActive, leftAnchor: self.leadingAnchor, rightAnchor: self.trailingAnchor)
     }
