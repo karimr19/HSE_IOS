@@ -16,7 +16,6 @@ final class TableViewController: UIViewController{
         view.backgroundColor = .yellow
         setupTableView()
     }
-    
     private func setupTableView() {
         let table = UITableView(frame: .zero)
         view.addSubview(table)
@@ -24,6 +23,31 @@ final class TableViewController: UIViewController{
         table.pinBottom(to: view.safeAreaLayoutGuide.bottomAnchor)
         table.pin(to:view, .left, .right)
         table.backgroundColor = .white
-        self.table = table
+        
+        table.register(EyeCell.self, forCellReuseIdentifier: "eyeCell")
+        table.delegate = self
+        table.dataSource = self
+//        self.table = table
+    }
+}
+
+extension TableViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        300
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
+}
+
+extension TableViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "eyeCell",
+            for: indexPath
+        ) as? EyeCell
+        cell?.setupEye()
+        return cell ?? UITableViewCell()
     }
 }
