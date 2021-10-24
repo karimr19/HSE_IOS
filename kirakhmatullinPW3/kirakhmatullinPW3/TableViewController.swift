@@ -10,9 +10,20 @@ import UIKit
 
 final class TableViewController: UIViewController{
     private var table: UITableView?
-    
+    private var alarms: [AlarmModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        for _ in 0...200 {
+            let minutes: Int = Int.random(in: 0...1440)
+            alarms.append(
+                AlarmModel(
+                    hours: minutes / 60,
+                    minutes: minutes % 60,
+                    isActive: Bool.random()
+                )
+            )
+        }
+        alarms.sort(by: AlarmModel.sorterForAlarms)
         view.backgroundColor = .yellow
         setupTableView()
     }
@@ -24,7 +35,7 @@ final class TableViewController: UIViewController{
         table.pin(to:view, .left, .right)
         table.backgroundColor = .white
         
-        table.register(EyeCell.self, forCellReuseIdentifier: "eyeCell")
+        table.register(AlarmCell.self, forCellReuseIdentifier: "alarmCell")
         table.delegate = self
         table.dataSource = self
 //        self.table = table
@@ -33,7 +44,7 @@ final class TableViewController: UIViewController{
 
 extension TableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        300
+        alarms.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,10 +55,10 @@ extension TableViewController: UITableViewDelegate {
 extension TableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
-            withIdentifier: "eyeCell",
+            withIdentifier: "alarmCell",
             for: indexPath
-        ) as? EyeCell
-        cell?.setupEye()
+        ) as? AlarmCell
+        cell?.setupAlarm(contentAlarm: alarms[indexPath.row])
         return cell ?? UITableViewCell()
     }
 }

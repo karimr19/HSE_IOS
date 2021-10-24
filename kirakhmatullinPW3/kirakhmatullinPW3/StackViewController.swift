@@ -17,10 +17,13 @@ final class StackViewController: UIViewController {
         setupScroll()
         setupStackView()
         
+        let separatorView = SeparatorView()
+        stack?.addArrangedSubview(separatorView)
+        separatorView.setUpSeparatorView(leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
         for _ in 0..<23 {
             let alarmView = AlarmView()
             stack?.addArrangedSubview(alarmView)
-            alarmView.setupAlarmView(leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
+            alarmView.setupAlarmViewDefault(leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
             if let scroll = scroll {
                 alarmView.pinWidth(to: scroll.widthAnchor)
             }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8A8ADAC927258F46006BB844 /* EyeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8ADAC827258F46006BB844 /* EyeCell.swift */; };
+		8A8ADACC27259BDF006BB844 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8ADACB27259BDF006BB844 /* AlarmModel.swift */; };
+		8A8ADACE27259FB3006BB844 /* AlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8ADACD27259FB3006BB844 /* AlarmCell.swift */; };
 		8A954649270D8FC300D97E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A954648270D8FC300D97E23 /* AppDelegate.swift */; };
 		8A95464B270D8FC300D97E23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A95464A270D8FC300D97E23 /* SceneDelegate.swift */; };
 		8A95464D270D8FC300D97E23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A95464C270D8FC300D97E23 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		8A8ADAC827258F46006BB844 /* EyeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeCell.swift; sourceTree = "<group>"; };
+		8A8ADACB27259BDF006BB844 /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		8A8ADACD27259FB3006BB844 /* AlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCell.swift; sourceTree = "<group>"; };
 		8A954645270D8FC300D97E23 /* kirakhmatullinPW3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kirakhmatullinPW3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A954648270D8FC300D97E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A95464A270D8FC300D97E23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A8ADACA27259BD0006BB844 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A8ADACB27259BDF006BB844 /* AlarmModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8A95463C270D8FC300D97E23 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +80,7 @@
 		8A954647270D8FC300D97E23 /* kirakhmatullinPW3 */ = {
 			isa = PBXGroup;
 			children = (
+				8A8ADACA27259BD0006BB844 /* Model */,
 				8A954664270DB19B00D97E23 /* View */,
 				8A954662270DAC7900D97E23 /* UIView_Pin.swift */,
 				8A954648270D8FC300D97E23 /* AppDelegate.swift */,
@@ -89,6 +102,7 @@
 				8A954665270DB2DF00D97E23 /* AlarmView.swift */,
 				8A954667270DC9D800D97E23 /* SeparatorView.swift */,
 				8A8ADAC827258F46006BB844 /* EyeCell.swift */,
+				8A8ADACD27259FB3006BB844 /* AlarmCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +186,8 @@
 				8A95465F270D96B300D97E23 /* TableViewController.swift in Sources */,
 				8A95464B270D8FC300D97E23 /* SceneDelegate.swift in Sources */,
 				8A8ADAC927258F46006BB844 /* EyeCell.swift in Sources */,
+				8A8ADACC27259BDF006BB844 /* AlarmModel.swift in Sources */,
+				8A8ADACE27259FB3006BB844 /* AlarmCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

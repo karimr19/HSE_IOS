@@ -7,7 +7,7 @@
 
 import UIKit
 final class AlarmView: UIView {
-    func setupAlarmView(leftAnchor: NSLayoutXAxisAnchor,
+    func setupAlarmViewDefault(leftAnchor: NSLayoutXAxisAnchor,
                         rightAnchor: NSLayoutXAxisAnchor) {
         pinRight(to: rightAnchor)
         pinLeft(to: leftAnchor)
@@ -26,19 +26,41 @@ final class AlarmView: UIView {
         timeLabel.pinTop(to: self)
         timeLabel.setHeight(to: 20)
         timeLabel.pinCenter(to: self.centerYAnchor)
-//        timeLabel.translatesAutoresizingMaskIntoConstraints = false
-//        timeLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-//        timeLabel.pinCenter(to: self.topAnchor)
-//        timeLabel.pinCenter(to: self.topAnchor)
-//        timeLabel.pinCenter(to: self)
-//        timeLabel.setWidth(to: 3)
         
         let switchTimerToggle = UISwitch()
         addSubview(switchTimerToggle)
-//        switchTimerToggle.pinCenter(to: self)
-//        switchTimerToggle.pinLeft(to: timeLabel.trailingAnchor)
+
         switchTimerToggle.pinRight(to: self, 8)
         switchTimerToggle.pinCenter(to: centerYAnchor)
-//        switchTimerToggle.pinCenter(to: self.topAnchor)
+    }
+    
+    func setupAlarmView(hours: Int, minutes: Int, isActive: Bool, leftAnchor: NSLayoutXAxisAnchor,
+                        rightAnchor: NSLayoutXAxisAnchor) {
+        pinRight(to: rightAnchor)
+        pinLeft(to: leftAnchor)
+        setHeight(to: 50)
+        
+        // TODO: change logic to allow user input his time
+        // instead of auto-generating.
+        let timeLabel = UILabel()
+        // Makes time string
+        var minutesStr: String = ":"
+        if (minutes < 10) {
+            minutesStr = ":0"
+        }
+        minutesStr += "\(minutes)"
+        timeLabel.text = "\(hours)" + minutesStr
+        addSubview(timeLabel)
+        timeLabel.pinLeft(to: self, 2)
+        timeLabel.pinTop(to: self)
+        timeLabel.setHeight(to: 20)
+        timeLabel.pinCenter(to: self.centerYAnchor)
+        
+        let switchTimerToggle = UISwitch()
+        switchTimerToggle.isOn = isActive
+        addSubview(switchTimerToggle)
+
+        switchTimerToggle.pinRight(to: self, 8)
+        switchTimerToggle.pinCenter(to: centerYAnchor)
     }
 }
