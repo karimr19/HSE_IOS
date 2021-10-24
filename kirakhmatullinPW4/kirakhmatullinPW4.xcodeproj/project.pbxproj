@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1C1F07272325F200CB5740 /* AutoResizingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1C1F06272325F200CB5740 /* AutoResizingLayout.swift */; };
 		8A8312492721E7B700A44153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8312482721E7B700A44153 /* AppDelegate.swift */; };
 		8A83124B2721E7B700A44153 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83124A2721E7B700A44153 /* SceneDelegate.swift */; };
 		8A83124D2721E7B700A44153 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A83124C2721E7B700A44153 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A1C1F06272325F200CB5740 /* AutoResizingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoResizingLayout.swift; sourceTree = "<group>"; };
 		8A8312452721E7B700A44153 /* kirakhmatullinPW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kirakhmatullinPW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8312482721E7B700A44153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A83124A2721E7B700A44153 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				8A83124E2721E7B700A44153 /* Main.storyboard */,
 				8A83125F2722152600A44153 /* NoteViewController.swift */,
 				8A9472912722D68300027F27 /* CoreDataNotes.xcdatamodeld */,
+				8A1C1F06272325F200CB5740 /* AutoResizingLayout.swift */,
 			);
 			path = kirakhmatullinPW4;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				8A8312492721E7B700A44153 /* AppDelegate.swift in Sources */,
 				8A83124B2721E7B700A44153 /* SceneDelegate.swift in Sources */,
 				8A8312602722152600A44153 /* NoteViewController.swift in Sources */,
+				8A1C1F07272325F200CB5740 /* AutoResizingLayout.swift in Sources */,
 				8A9472932722D68300027F27 /* CoreDataNotes.xcdatamodeld in Sources */,
 				8A83125D2722047B00A44153 /* NoteCell.swift in Sources */,
 			);

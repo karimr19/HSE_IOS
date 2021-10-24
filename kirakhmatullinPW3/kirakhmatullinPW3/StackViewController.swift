@@ -17,28 +17,17 @@ final class StackViewController: UIViewController {
         setupScroll()
         setupStackView()
         
-        var topAnchor = stack!.topAnchor;
         for _ in 0..<23 {
             let alarmView = AlarmView()
-            stack?.addSubview(alarmView)
-            alarmView.setupAlarmView(topAnchor: topAnchor, leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
+            stack?.addArrangedSubview(alarmView)
+            alarmView.setupAlarmView(leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
+            if let scroll = scroll {
+                alarmView.pinWidth(to: scroll.widthAnchor)
+            }
             let separatorView = SeparatorView()
-            stack?.addSubview(separatorView)
-            separatorView.setUpSeparatorView(topAnchor: alarmView.bottomAnchor, leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
-            topAnchor = alarmView.bottomAnchor
+            stack?.addArrangedSubview(separatorView)
+            separatorView.setUpSeparatorView(leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
         }
-//        stack?.addSubview(alarmView)
-//        alarmView.setupAlarmView(topAnchor: stack!.topAnchor, leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
-//        let separatorView = SeparatorView()
-//        stack?.addSubview(separatorView)
-//        separatorView.setUpSeparatorView(topAnchor: alarmView.bottomAnchor, leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
-//        let newAlarmView = AlarmView()
-//        stack?.addSubview(newAlarmView)
-//        newAlarmView.setupAlarmView(topAnchor: separatorView.bottomAnchor, leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
-//        let newSeparatorView = SeparatorView()
-//        stack?.addSubview(newSeparatorView)
-//        newSeparatorView.setUpSeparatorView(topAnchor: newAlarmView.bottomAnchor, leftAnchor: stack!.leadingAnchor, rightAnchor: stack!.trailingAnchor)
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -50,21 +39,14 @@ final class StackViewController: UIViewController {
     
     private func setupStackView() {
         let stack = UIStackView(frame: .zero)
-//        view.addSubview(stack)
         scroll?.addSubview(stack)
-        stack.pinTop(to: scroll!.topAnchor)
-        stack.pinBottom(to: scroll!.bottomAnchor)
-//        stack.pinTop(to:view.safeAreaLayoutGuide.topAnchor)
-//        stack.pinBottom(to:view.safeAreaLayoutGuide.bottomAnchor)
-        stack.pinLeft(to:view)
-        stack.pinRight(to:view)
-//        stack.pin(to:view, .left, .right)
-//        stack.widthAnchor.constraint(equalTo:scroll!.widthAnchor).isActive = true
+        if let scroll = scroll {
+            stack.pin(to: scroll)
+        }
         stack.backgroundColor = .white
         stack.axis = .vertical
-        stack.alignment = .fill
-        stack.distribution = .equalSpacing
-        stack.spacing = 0
+        scroll?.showsVerticalScrollIndicator = false
+        scroll?.showsHorizontalScrollIndicator = false
         self.stack = stack
     }
     

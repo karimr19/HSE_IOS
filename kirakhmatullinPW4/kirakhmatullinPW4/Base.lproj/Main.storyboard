@@ -35,26 +35,26 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e23-YW-n2B">
-                                                    <rect key="frame" x="56" y="38" width="42" height="21"/>
+                                                    <rect key="frame" x="31" y="37" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPH-kJ-vM4">
-                                                    <rect key="frame" x="240" y="38" width="41.5" height="20.5"/>
+                                                    <rect key="frame" x="176" y="37" width="41.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="e23-YW-n2B" firstAttribute="top" secondItem="PXe-hv-KEN" secondAttribute="top" constant="38" id="5d5-Fw-lGa"/>
-                                                <constraint firstItem="vPH-kJ-vM4" firstAttribute="leading" secondItem="e23-YW-n2B" secondAttribute="trailing" priority="500" constant="142" id="A0U-1b-8wr"/>
-                                                <constraint firstAttribute="bottom" secondItem="vPH-kJ-vM4" secondAttribute="bottom" constant="37.5" id="O2M-wd-a8I"/>
-                                                <constraint firstItem="e23-YW-n2B" firstAttribute="leading" secondItem="PXe-hv-KEN" secondAttribute="leading" priority="500" constant="56" id="PlN-Hi-hG0"/>
-                                                <constraint firstAttribute="trailing" secondItem="vPH-kJ-vM4" secondAttribute="trailing" priority="500" constant="51.5" id="SYw-pT-3Si"/>
-                                                <constraint firstAttribute="bottom" secondItem="e23-YW-n2B" secondAttribute="bottom" constant="37" id="Upp-p2-pod"/>
-                                                <constraint firstItem="vPH-kJ-vM4" firstAttribute="top" secondItem="PXe-hv-KEN" secondAttribute="top" constant="38" id="tx7-bk-VDq"/>
+                                                <constraint firstAttribute="bottom" secondItem="vPH-kJ-vM4" secondAttribute="bottom" constant="38.5" id="Mtf-0f-PjT"/>
+                                                <constraint firstItem="e23-YW-n2B" firstAttribute="leading" secondItem="PXe-hv-KEN" secondAttribute="leading" constant="31" id="OLN-3U-JPe"/>
+                                                <constraint firstAttribute="trailing" secondItem="vPH-kJ-vM4" secondAttribute="trailing" constant="115.5" id="bn3-sO-rrB"/>
+                                                <constraint firstItem="e23-YW-n2B" firstAttribute="top" secondItem="PXe-hv-KEN" secondAttribute="top" constant="37" id="eiN-49-fES"/>
+                                                <constraint firstItem="vPH-kJ-vM4" firstAttribute="leading" secondItem="e23-YW-n2B" secondAttribute="trailing" constant="103" id="oXM-70-pP5"/>
+                                                <constraint firstItem="vPH-kJ-vM4" firstAttribute="top" secondItem="PXe-hv-KEN" secondAttribute="top" constant="37" id="vnS-7x-UAZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="e23-YW-n2B" secondAttribute="bottom" constant="38" id="xfO-Q2-VOa"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.86228684247024867" green="0.73410699547480673" blue="0.96699744462966919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

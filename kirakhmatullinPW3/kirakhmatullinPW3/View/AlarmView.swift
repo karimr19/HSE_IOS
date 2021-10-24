@@ -7,12 +7,11 @@
 
 import UIKit
 final class AlarmView: UIView {
-    func setupAlarmView(topAnchor: NSLayoutYAxisAnchor, leftAnchor: NSLayoutXAxisAnchor,
+    func setupAlarmView(leftAnchor: NSLayoutXAxisAnchor,
                         rightAnchor: NSLayoutXAxisAnchor) {
-        pinTop(to: topAnchor)
         pinRight(to: rightAnchor)
         pinLeft(to: leftAnchor)
-        setHeight(to: 35)
+        setHeight(to: 50)
         
         // TODO: change logic to allow user input his time
         // instead of auto-generating.
@@ -39,7 +38,7 @@ final class AlarmView: UIView {
 //        switchTimerToggle.pinCenter(to: self)
 //        switchTimerToggle.pinLeft(to: timeLabel.trailingAnchor)
         switchTimerToggle.pinRight(to: self, 8)
-        switchTimerToggle.pinCenter(to: self.centerYAnchor)
+        switchTimerToggle.pinCenter(to: centerYAnchor)
 //        switchTimerToggle.pinCenter(to: self.topAnchor)
     }
 }
