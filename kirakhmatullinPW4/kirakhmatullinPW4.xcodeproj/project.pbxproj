@@ -15,6 +15,7 @@
 		8A5EC4452729EFD200BC783C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5EC4432729EFD200BC783C /* LaunchScreen.storyboard */; };
 		8A5EC44E2729F2F900BC783C /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EC44D2729F2F900BC783C /* NoteCell.swift */; };
 		8A5EC4502729F3D800BC783C /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EC44F2729F3D800BC783C /* NoteViewController.swift */; };
+		8A5EC4532729FB4700BC783C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EC4522729FB4700BC783C /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8A5EC4462729EFD200BC783C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A5EC44D2729F2F900BC783C /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		8A5EC44F2729F3D800BC783C /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		8A5EC4522729FB4700BC783C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		8A5EC4372729EFCE00BC783C /* kirakhmatullinPW4 */ = {
 			isa = PBXGroup;
 			children = (
+				8A5EC4512729FB3D00BC783C /* Model */,
 				8A5EC44C2729F2E700BC783C /* View */,
 				8A5EC4382729EFCE00BC783C /* AppDelegate.swift */,
 				8A5EC43A2729EFCE00BC783C /* SceneDelegate.swift */,
@@ -79,6 +82,14 @@
 				8A5EC44D2729F2F900BC783C /* NoteCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8A5EC4512729FB3D00BC783C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A5EC4522729FB4700BC783C /* Note.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 				8A5EC43B2729EFCE00BC783C /* SceneDelegate.swift in Sources */,
 				8A5EC4502729F3D800BC783C /* NoteViewController.swift in Sources */,
 				8A5EC44E2729F2F900BC783C /* NoteCell.swift in Sources */,
+				8A5EC4532729FB4700BC783C /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
