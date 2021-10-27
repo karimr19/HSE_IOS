@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  kirakhmatullinPW4
 //
-//  Created by Karim on 21.10.2021.
+//  Created by Karim on 27.10.2021.
 //
 
 import UIKit
