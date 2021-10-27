@@ -15,7 +15,9 @@
 		8A5EC4452729EFD200BC783C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5EC4432729EFD200BC783C /* LaunchScreen.storyboard */; };
 		8A5EC44E2729F2F900BC783C /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EC44D2729F2F900BC783C /* NoteCell.swift */; };
 		8A5EC4502729F3D800BC783C /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EC44F2729F3D800BC783C /* NoteViewController.swift */; };
-		8A5EC4532729FB4700BC783C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EC4522729FB4700BC783C /* Note.swift */; };
+		8A5EC4562729FD3F00BC783C /* CoreDataNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EC4542729FD3F00BC783C /* CoreDataNotes.xcdatamodeld */; };
+		8A5EC4592729FDC300BC783C /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EC4572729FDC300BC783C /* Note+CoreDataClass.swift */; };
+		8A5EC45A2729FDC300BC783C /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EC4582729FDC300BC783C /* Note+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		8A5EC4462729EFD200BC783C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A5EC44D2729F2F900BC783C /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		8A5EC44F2729F3D800BC783C /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
-		8A5EC4522729FB4700BC783C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		8A5EC4552729FD3F00BC783C /* CoreDataNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataNotes.xcdatamodel; sourceTree = "<group>"; };
+		8A5EC4572729FDC300BC783C /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "kirakhmatullinPW4/Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8A5EC4582729FDC300BC783C /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "kirakhmatullinPW4/Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		8A5EC42C2729EFCE00BC783C = {
 			isa = PBXGroup;
 			children = (
+				8A5EC4572729FDC300BC783C /* Note+CoreDataClass.swift */,
+				8A5EC4582729FDC300BC783C /* Note+CoreDataProperties.swift */,
 				8A5EC4372729EFCE00BC783C /* kirakhmatullinPW4 */,
 				8A5EC4362729EFCE00BC783C /* Products */,
 			);
@@ -72,6 +78,7 @@
 				8A5EC4432729EFD200BC783C /* LaunchScreen.storyboard */,
 				8A5EC4462729EFD200BC783C /* Info.plist */,
 				8A5EC44F2729F3D800BC783C /* NoteViewController.swift */,
+				8A5EC4542729FD3F00BC783C /* CoreDataNotes.xcdatamodeld */,
 			);
 			path = kirakhmatullinPW4;
 			sourceTree = "<group>";
@@ -87,7 +94,6 @@
 		8A5EC4512729FB3D00BC783C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8A5EC4522729FB4700BC783C /* Note.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,11 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A5EC43D2729EFCE00BC783C /* ViewController.swift in Sources */,
+				8A5EC45A2729FDC300BC783C /* Note+CoreDataProperties.swift in Sources */,
+				8A5EC4592729FDC300BC783C /* Note+CoreDataClass.swift in Sources */,
 				8A5EC4392729EFCE00BC783C /* AppDelegate.swift in Sources */,
 				8A5EC43B2729EFCE00BC783C /* SceneDelegate.swift in Sources */,
 				8A5EC4502729F3D800BC783C /* NoteViewController.swift in Sources */,
+				8A5EC4562729FD3F00BC783C /* CoreDataNotes.xcdatamodeld in Sources */,
 				8A5EC44E2729F2F900BC783C /* NoteCell.swift in Sources */,
-				8A5EC4532729FB4700BC783C /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +375,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8A5EC4542729FD3F00BC783C /* CoreDataNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8A5EC4552729FD3F00BC783C /* CoreDataNotes.xcdatamodel */,
+			);
+			currentVersion = 8A5EC4552729FD3F00BC783C /* CoreDataNotes.xcdatamodel */;
+			path = CoreDataNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8A5EC42D2729EFCE00BC783C /* Project object */;
 }
