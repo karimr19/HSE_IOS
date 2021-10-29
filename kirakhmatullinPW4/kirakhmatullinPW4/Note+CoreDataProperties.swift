@@ -20,6 +20,7 @@ extension Note {
     @NSManaged public var descriptionText: String?
     @NSManaged public var relateToLastNote: Note?
     @NSManaged public var creationDate: Date
+    @NSManaged public var status: Int32
 
 }
 

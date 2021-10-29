@@ -26,6 +26,7 @@ class NoteViewController: UIViewController {
             newNote.title = title
             newNote.descriptionText = descriptionText
             newNote.creationDate = Date()
+            newNote.status = Int32(Int.random(in: 0..<4))
             outputVC.saveChanges()
             outputVC.loadData()
         }

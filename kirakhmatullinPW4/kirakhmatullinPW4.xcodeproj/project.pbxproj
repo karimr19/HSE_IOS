@@ -34,6 +34,7 @@
 		8A5EC4552729FD3F00BC783C /* CoreDataNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataNotes.xcdatamodel; sourceTree = "<group>"; };
 		8A5EC4572729FDC300BC783C /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "kirakhmatullinPW4/Note+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8A5EC4582729FDC300BC783C /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "kirakhmatullinPW4/Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8AF0775E272C186500E12716 /* CoreDataNotes v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataNotes v2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,9 +381,10 @@
 		8A5EC4542729FD3F00BC783C /* CoreDataNotes.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				8AF0775E272C186500E12716 /* CoreDataNotes v2.xcdatamodel */,
 				8A5EC4552729FD3F00BC783C /* CoreDataNotes.xcdatamodel */,
 			);
-			currentVersion = 8A5EC4552729FD3F00BC783C /* CoreDataNotes.xcdatamodel */;
+			currentVersion = 8AF0775E272C186500E12716 /* CoreDataNotes v2.xcdatamodel */;
 			path = CoreDataNotes.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
