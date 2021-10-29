@@ -42,6 +42,11 @@ class ViewController: UIViewController {
             try? context.save()
         }
         if let notes = try? context.fetch(Note.fetchRequest()) as [Note]{
+            // Sets relationships.
+            if (notes.count > 1) {
+                notes[notes.count - 1].relateToLastNote = notes[notes.count - 2]
+            }
+            
             self.notes = notes
         } else {
             self.notes = []
@@ -90,5 +95,11 @@ extension ViewController: UICollectionViewDelegate {
             }
             return UIMenu(title: "", image: nil,children: [deleteAction])
         }
+    }
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.bounds.width - 20, height: 100)
     }
 }

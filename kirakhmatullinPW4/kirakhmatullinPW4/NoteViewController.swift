@@ -27,6 +27,7 @@ class NoteViewController: UIViewController {
             newNote.descriptionText = descriptionText
             newNote.creationDate = Date()
             outputVC.saveChanges()
+            outputVC.loadData()
         }
         self.navigationController?.popViewController(animated: true)
     }
