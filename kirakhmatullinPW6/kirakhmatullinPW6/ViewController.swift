@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import MyLogger1
+import SwiftUI
 
 class ViewController: UIViewController {
 
@@ -71,7 +73,7 @@ class ViewController: UIViewController {
         ).isActive = true
     }
     @objc func frameworkButtonClicked() {
-
+        print(SwiftUI.Date())
     }
     
     @objc func swiftPackageButtonClicked() {

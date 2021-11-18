@@ -13,7 +13,34 @@
 		8A1B8EF62746D2F100E4C33D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B8EF52746D2F100E4C33D /* Assets.xcassets */; };
 		8A1B8EF92746D2F100E4C33D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B8EF72746D2F100E4C33D /* LaunchScreen.storyboard */; };
 		8A1B8F012746D48100E4C33D /* UIView_Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1B8F002746D48100E4C33D /* UIView_Pin.swift */; };
+		8A1B8F202746E44200E4C33D /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1B8F1E2746E3DB00E4C33D /* MyLogger1.framework */; };
+		8A1B8F212746E44200E4C33D /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1B8F1E2746E3DB00E4C33D /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A1B8F232746E4FE00E4C33D /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1B8F1E2746E3DB00E4C33D /* MyLogger1.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A1B8F1D2746E3DB00E4C33D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A1B8F192746E3DB00E4C33D /* MyLogger1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A1B8F0C2746E26A00E4C33D;
+			remoteInfo = MyLogger1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A1B8F222746E44300E4C33D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8A1B8F212746E44200E4C33D /* MyLogger1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8A1B8EE92746D2F000E4C33D /* kirakhmatullinPW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kirakhmatullinPW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +51,7 @@
 		8A1B8EF82746D2F100E4C33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A1B8EFA2746D2F100E4C33D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A1B8F002746D48100E4C33D /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_Pin.swift; path = ../../../HSE_IOS_materials/UIView_Pin.swift; sourceTree = "<group>"; };
+		8A1B8F192746E3DB00E4C33D /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../Libraries/MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1B8F232746E4FE00E4C33D /* MyLogger1.framework in Frameworks */,
+				8A1B8F202746E44200E4C33D /* MyLogger1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +70,10 @@
 		8A1B8EE02746D2F000E4C33D = {
 			isa = PBXGroup;
 			children = (
+				8A1B8F192746E3DB00E4C33D /* MyLogger1.xcodeproj */,
 				8A1B8EEB2746D2F000E4C33D /* kirakhmatullinPW6 */,
 				8A1B8EEA2746D2F000E4C33D /* Products */,
+				8A1B8F1F2746E44200E4C33D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +99,21 @@
 			path = kirakhmatullinPW6;
 			sourceTree = "<group>";
 		};
+		8A1B8F1A2746E3DB00E4C33D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A1B8F1E2746E3DB00E4C33D /* MyLogger1.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A1B8F1F2746E44200E4C33D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +124,7 @@
 				8A1B8EE52746D2F000E4C33D /* Sources */,
 				8A1B8EE62746D2F000E4C33D /* Frameworks */,
 				8A1B8EE72746D2F000E4C33D /* Resources */,
+				8A1B8F222746E44300E4C33D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,12 +160,28 @@
 			mainGroup = 8A1B8EE02746D2F000E4C33D;
 			productRefGroup = 8A1B8EEA2746D2F000E4C33D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8A1B8F1A2746E3DB00E4C33D /* Products */;
+					ProjectRef = 8A1B8F192746E3DB00E4C33D /* MyLogger1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8A1B8EE82746D2F000E4C33D /* kirakhmatullinPW6 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8A1B8F1E2746E3DB00E4C33D /* MyLogger1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyLogger1.framework;
+			remoteRef = 8A1B8F1D2746E3DB00E4C33D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8A1B8EE72746D2F000E4C33D /* Resources */ = {
