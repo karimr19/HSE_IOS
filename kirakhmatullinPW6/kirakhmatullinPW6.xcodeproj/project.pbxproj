@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		8A1B8F202746E44200E4C33D /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1B8F1E2746E3DB00E4C33D /* MyLogger1.framework */; };
 		8A1B8F212746E44200E4C33D /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1B8F1E2746E3DB00E4C33D /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A1B8F232746E4FE00E4C33D /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1B8F1E2746E3DB00E4C33D /* MyLogger1.framework */; };
+		8A1B8F2F2746EFC800E4C33D /* PlayingCard in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1B8F2E2746EFC800E4C33D /* PlayingCard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1B8F2F2746EFC800E4C33D /* PlayingCard in Frameworks */,
 				8A1B8F232746E4FE00E4C33D /* MyLogger1.framework in Frameworks */,
 				8A1B8F202746E44200E4C33D /* MyLogger1.framework in Frameworks */,
 			);
@@ -131,6 +133,9 @@
 			dependencies = (
 			);
 			name = kirakhmatullinPW6;
+			packageProductDependencies = (
+				8A1B8F2E2746EFC800E4C33D /* PlayingCard */,
+			);
 			productName = kirakhmatullinPW6;
 			productReference = 8A1B8EE92746D2F000E4C33D /* kirakhmatullinPW6.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +163,10 @@
 				Base,
 			);
 			mainGroup = 8A1B8EE02746D2F000E4C33D;
+			packageReferences = (
+				8A1B8F242746ED9700E4C33D /* XCRemoteSwiftPackageReference "swift-syntax" */,
+				8A1B8F2D2746EFC800E4C33D /* XCRemoteSwiftPackageReference "example-package-playingcard" */,
+			);
 			productRefGroup = 8A1B8EEA2746D2F000E4C33D /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -395,6 +404,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A1B8F242746ED9700E4C33D /* XCRemoteSwiftPackageReference "swift-syntax" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-syntax.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.50500.0;
+			};
+		};
+		8A1B8F2D2746EFC800E4C33D /* XCRemoteSwiftPackageReference "example-package-playingcard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/example-package-playingcard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A1B8F2E2746EFC800E4C33D /* PlayingCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A1B8F2D2746EFC800E4C33D /* XCRemoteSwiftPackageReference "example-package-playingcard" */;
+			productName = PlayingCard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A1B8EE12746D2F000E4C33D /* Project object */;
 }
