@@ -8,6 +8,7 @@
 import UIKit
 import MyLogger1
 import SwiftUI
+import MyLogger2
 
 
 class ViewController: UIViewController {
@@ -78,7 +79,7 @@ class ViewController: UIViewController {
     }
     
     @objc func swiftPackageButtonClicked() {
-        print("New swift syntax package has been added!")
+        MyLogger2.log("hello, world")
     }
     
     @objc func carthageButtonClicked() {

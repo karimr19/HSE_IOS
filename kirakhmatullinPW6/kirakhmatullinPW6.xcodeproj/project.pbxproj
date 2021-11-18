@@ -17,6 +17,7 @@
 		8A1B8F212746E44200E4C33D /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1B8F1E2746E3DB00E4C33D /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A1B8F232746E4FE00E4C33D /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1B8F1E2746E3DB00E4C33D /* MyLogger1.framework */; };
 		8A1B8F2F2746EFC800E4C33D /* PlayingCard in Frameworks */ = {isa = PBXBuildFile; productRef = 8A1B8F2E2746EFC800E4C33D /* PlayingCard */; };
+		8A9C1A162746F85B00B86AD7 /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 8A9C1A152746F85B00B86AD7 /* MyLogger2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8A1B8EFA2746D2F100E4C33D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A1B8F002746D48100E4C33D /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_Pin.swift; path = ../../../HSE_IOS_materials/UIView_Pin.swift; sourceTree = "<group>"; };
 		8A1B8F192746E3DB00E4C33D /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../Libraries/MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
+		8A9C1A142746F84E00B86AD7 /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLogger2; path = ../../../.Trash/MyLogger2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A1B8F2F2746EFC800E4C33D /* PlayingCard in Frameworks */,
+				8A9C1A162746F85B00B86AD7 /* MyLogger2 in Frameworks */,
 				8A1B8F232746E4FE00E4C33D /* MyLogger1.framework in Frameworks */,
 				8A1B8F202746E44200E4C33D /* MyLogger1.framework in Frameworks */,
 			);
@@ -72,6 +75,7 @@
 		8A1B8EE02746D2F000E4C33D = {
 			isa = PBXGroup;
 			children = (
+				8A9C1A142746F84E00B86AD7 /* MyLogger2 */,
 				8A1B8F192746E3DB00E4C33D /* MyLogger1.xcodeproj */,
 				8A1B8EEB2746D2F000E4C33D /* kirakhmatullinPW6 */,
 				8A1B8EEA2746D2F000E4C33D /* Products */,
@@ -135,6 +139,7 @@
 			name = kirakhmatullinPW6;
 			packageProductDependencies = (
 				8A1B8F2E2746EFC800E4C33D /* PlayingCard */,
+				8A9C1A152746F85B00B86AD7 /* MyLogger2 */,
 			);
 			productName = kirakhmatullinPW6;
 			productReference = 8A1B8EE92746D2F000E4C33D /* kirakhmatullinPW6.app */;
@@ -429,6 +434,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8A1B8F2D2746EFC800E4C33D /* XCRemoteSwiftPackageReference "example-package-playingcard" */;
 			productName = PlayingCard;
+		};
+		8A9C1A152746F85B00B86AD7 /* MyLogger2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLogger2;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
