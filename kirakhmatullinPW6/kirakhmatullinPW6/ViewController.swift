@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         ).isActive = true
     }
     @objc func frameworkButtonClicked() {
-        print(SwiftUI.Date())
+        MyLogger1.log("hello, world")
     }
     
     @objc func swiftPackageButtonClicked() {
