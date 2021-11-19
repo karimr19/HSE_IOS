@@ -14,7 +14,33 @@
 		8A501F1527482E1800B2A30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A501F1427482E1800B2A30F /* Assets.xcassets */; };
 		8A501F1827482E1800B2A30F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A501F1627482E1800B2A30F /* LaunchScreen.storyboard */; };
 		8A501F2127482EB600B2A30F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A501F2027482EB600B2A30F /* Accounts.framework */; };
+		8A501F7B2748323300B2A30F /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A501F7A274831BB00B2A30F /* MyLogger1.framework */; };
+		8A501F7C2748323300B2A30F /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A501F7A274831BB00B2A30F /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A501F79274831BB00B2A30F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A501F75274831BB00B2A30F /* MyLogger1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A501F682748313700B2A30F;
+			remoteInfo = MyLogger1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A501F5D2748308F00B2A30F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8A501F7C2748323300B2A30F /* MyLogger1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8A501F0827482E1600B2A30F /* kirakhmatullin_PW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kirakhmatullin_PW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +52,7 @@
 		8A501F1727482E1800B2A30F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A501F1927482E1800B2A30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A501F2027482EB600B2A30F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		8A501F75274831BB00B2A30F /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../Libraries/MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A501F7B2748323300B2A30F /* MyLogger1.framework in Frameworks */,
 				8A501F2127482EB600B2A30F /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +71,7 @@
 		8A501EFF27482E1600B2A30F = {
 			isa = PBXGroup;
 			children = (
+				8A501F75274831BB00B2A30F /* MyLogger1.xcodeproj */,
 				8A501F0A27482E1600B2A30F /* kirakhmatullin_PW6 */,
 				8A501F0927482E1600B2A30F /* Products */,
 				8A501F1F27482EB600B2A30F /* Frameworks */,
@@ -79,6 +108,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8A501F76274831BB00B2A30F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A501F7A274831BB00B2A30F /* MyLogger1.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +126,7 @@
 				8A501F0427482E1600B2A30F /* Sources */,
 				8A501F0527482E1600B2A30F /* Frameworks */,
 				8A501F0627482E1600B2A30F /* Resources */,
+				8A501F5D2748308F00B2A30F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,12 +162,28 @@
 			mainGroup = 8A501EFF27482E1600B2A30F;
 			productRefGroup = 8A501F0927482E1600B2A30F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8A501F76274831BB00B2A30F /* Products */;
+					ProjectRef = 8A501F75274831BB00B2A30F /* MyLogger1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8A501F0727482E1600B2A30F /* kirakhmatullin_PW6 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8A501F7A274831BB00B2A30F /* MyLogger1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyLogger1.framework;
+			remoteRef = 8A501F79274831BB00B2A30F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8A501F0627482E1600B2A30F /* Resources */ = {

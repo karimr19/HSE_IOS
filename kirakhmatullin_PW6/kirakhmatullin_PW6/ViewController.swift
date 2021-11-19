@@ -7,6 +7,7 @@
 
 import UIKit
 import Accounts
+import MyLogger1
 
 class ViewController: UIViewController {
     var buttonFramework = UIButton()
@@ -71,7 +72,7 @@ class ViewController: UIViewController {
         ).isActive = true
     }
     @objc func frameworkButtonClicked() {
-        print("Account framework added")
+        MyLogger1.log("HELP")
     }
 
     @objc func swiftPackageButtonClicked() {
