@@ -13,6 +13,7 @@
 		8A501F1327482E1600B2A30F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A501F1127482E1600B2A30F /* Main.storyboard */; };
 		8A501F1527482E1800B2A30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A501F1427482E1800B2A30F /* Assets.xcassets */; };
 		8A501F1827482E1800B2A30F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A501F1627482E1800B2A30F /* LaunchScreen.storyboard */; };
+		8A501F2127482EB600B2A30F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A501F2027482EB600B2A30F /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8A501F1427482E1800B2A30F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A501F1727482E1800B2A30F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A501F1927482E1800B2A30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A501F2027482EB600B2A30F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A501F2127482EB600B2A30F /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				8A501F0A27482E1600B2A30F /* kirakhmatullin_PW6 */,
 				8A501F0927482E1600B2A30F /* Products */,
+				8A501F1F27482EB600B2A30F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				8A501F1927482E1800B2A30F /* Info.plist */,
 			);
 			path = kirakhmatullin_PW6;
+			sourceTree = "<group>";
+		};
+		8A501F1F27482EB600B2A30F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A501F2027482EB600B2A30F /* Accounts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

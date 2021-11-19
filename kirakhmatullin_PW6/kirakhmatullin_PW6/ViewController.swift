@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Accounts
 
 class ViewController: UIViewController {
     var buttonFramework = UIButton()
@@ -70,7 +71,7 @@ class ViewController: UIViewController {
         ).isActive = true
     }
     @objc func frameworkButtonClicked() {
-
+        print("Account framework added")
     }
 
     @objc func swiftPackageButtonClicked() {
