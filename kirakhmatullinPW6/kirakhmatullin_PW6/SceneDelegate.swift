@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  kirakhmatullinPW6
+//  kirakhmatullin_PW6
 //
-//  Created by Karim on 18.11.2021.
+//  Created by Karim on 19.11.2021.
 //
 
 import UIKit

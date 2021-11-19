@@ -1,15 +1,11 @@
 //
 //  ViewController.swift
-//  kirakhmatullinPW6
+//  kirakhmatullin_PW6
 //
-//  Created by Karim on 18.11.2021.
+//  Created by Karim on 19.11.2021.
 //
-
 import UIKit
-import MyLogger1
-import SwiftUI
-import MyLogger2
-
+import Accounts
 
 class ViewController: UIViewController {
 
@@ -75,19 +71,17 @@ class ViewController: UIViewController {
         ).isActive = true
     }
     @objc func frameworkButtonClicked() {
-        MyLogger1.log("hello, world")
+        print(Accounts.ACL_WRITE_DATA)
     }
-    
+
     @objc func swiftPackageButtonClicked() {
-        MyLogger2.log("hello, world")
     }
-    
+
     @objc func carthageButtonClicked() {
-        
+
     }
-    
+
     @objc func podButtonClicked() {
-        
     }
 }
 
