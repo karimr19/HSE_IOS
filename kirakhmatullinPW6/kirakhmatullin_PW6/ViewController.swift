@@ -76,10 +76,11 @@ class ViewController: UIViewController {
     }
 
     @objc func swiftPackageButtonClicked() {
+        print("Random package added")
     }
 
     @objc func carthageButtonClicked() {
-
+        
     }
 
     @objc func podButtonClicked() {

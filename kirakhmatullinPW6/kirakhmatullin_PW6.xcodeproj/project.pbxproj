@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -157,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 8A501E422747DAAB00B2A30F;
+			packageReferences = (
+				8A501E912748039B00B2A30F /* XCRemoteSwiftPackageReference "example-package-dealer" */,
+			);
 			productRefGroup = 8A501E4C2747DAAB00B2A30F /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -393,6 +396,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A501E912748039B00B2A30F /* XCRemoteSwiftPackageReference "example-package-dealer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/example-package-dealer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 8A501E432747DAAB00B2A30F /* Project object */;
 }
