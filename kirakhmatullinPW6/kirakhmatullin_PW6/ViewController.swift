@@ -6,6 +6,7 @@
 //
 import UIKit
 import Accounts
+import MyLogger1
 
 class ViewController: UIViewController {
 
@@ -71,7 +72,7 @@ class ViewController: UIViewController {
         ).isActive = true
     }
     @objc func frameworkButtonClicked() {
-        print(Accounts.ACL_WRITE_DATA)
+        MyLogger1.log("hello, world")
     }
 
     @objc func swiftPackageButtonClicked() {
