@@ -76,7 +76,7 @@ class ViewController: UIViewController {
     }
 
     @objc func swiftPackageButtonClicked() {
-
+        print("Added random package")
     }
 
     @objc func carthageButtonClicked() {
