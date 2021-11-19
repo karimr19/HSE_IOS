@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		325B7C1E834EAE17DCA9A6CB /* Pods_kirakhmatullin_PW6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C1E1A245215CAD0F2DC064 /* Pods_kirakhmatullin_PW6.framework */; };
 		8A501F0C27482E1600B2A30F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A501F0B27482E1600B2A30F /* AppDelegate.swift */; };
 		8A501F0E27482E1600B2A30F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A501F0D27482E1600B2A30F /* SceneDelegate.swift */; };
 		8A501F1027482E1600B2A30F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A501F0F27482E1600B2A30F /* ViewController.swift */; };
@@ -44,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F79A29A38222CCE10B58D5C /* Pods-kirakhmatullin_PW6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kirakhmatullin_PW6.release.xcconfig"; path = "Target Support Files/Pods-kirakhmatullin_PW6/Pods-kirakhmatullin_PW6.release.xcconfig"; sourceTree = "<group>"; };
+		666033AFFAF1E41FC3E1E1E1 /* Pods-kirakhmatullin_PW6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kirakhmatullin_PW6.debug.xcconfig"; path = "Target Support Files/Pods-kirakhmatullin_PW6/Pods-kirakhmatullin_PW6.debug.xcconfig"; sourceTree = "<group>"; };
 		8A501F0827482E1600B2A30F /* kirakhmatullin_PW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kirakhmatullin_PW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A501F0B27482E1600B2A30F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A501F0D27482E1600B2A30F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		8A501F1927482E1800B2A30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A501F2027482EB600B2A30F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		8A501F75274831BB00B2A30F /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../Libraries/MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
+		A8C1E1A245215CAD0F2DC064 /* Pods_kirakhmatullin_PW6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kirakhmatullin_PW6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +68,23 @@
 				8A501F85274841B800B2A30F /* MyLogger2 in Frameworks */,
 				8A501F7B2748323300B2A30F /* MyLogger1.framework in Frameworks */,
 				8A501F2127482EB600B2A30F /* Accounts.framework in Frameworks */,
+				325B7C1E834EAE17DCA9A6CB /* Pods_kirakhmatullin_PW6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28A81AD5141DCC99ECE7A026 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				666033AFFAF1E41FC3E1E1E1 /* Pods-kirakhmatullin_PW6.debug.xcconfig */,
+				0F79A29A38222CCE10B58D5C /* Pods-kirakhmatullin_PW6.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8A501EFF27482E1600B2A30F = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +92,7 @@
 				8A501F0A27482E1600B2A30F /* kirakhmatullin_PW6 */,
 				8A501F0927482E1600B2A30F /* Products */,
 				8A501F1F27482EB600B2A30F /* Frameworks */,
+				28A81AD5141DCC99ECE7A026 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				8A501F2027482EB600B2A30F /* Accounts.framework */,
+				A8C1E1A245215CAD0F2DC064 /* Pods_kirakhmatullin_PW6.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,10 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A501F1C27482E1800B2A30F /* Build configuration list for PBXNativeTarget "kirakhmatullin_PW6" */;
 			buildPhases = (
+				8D8441A998293A9F9022CE96 /* [CP] Check Pods Manifest.lock */,
 				8A501F0427482E1600B2A30F /* Sources */,
 				8A501F0527482E1600B2A30F /* Frameworks */,
 				8A501F0627482E1600B2A30F /* Resources */,
 				8A501F5D2748308F00B2A30F /* Embed Frameworks */,
+				35AA0BD683AE03CAB13C02E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,7 +185,7 @@
 			);
 			mainGroup = 8A501EFF27482E1600B2A30F;
 			packageReferences = (
-				8A501F802748393A00B2A30F /* XCRemoteSwiftPackageReference "example-package-dealer" */,
+				8A501F802748393A00B2A30F /* XCRemoteSwiftPackageReference "example-package-dealer.git" */,
 			);
 			productRefGroup = 8A501F0927482E1600B2A30F /* Products */;
 			projectDirPath = "";
@@ -205,6 +224,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35AA0BD683AE03CAB13C02E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kirakhmatullin_PW6/Pods-kirakhmatullin_PW6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kirakhmatullin_PW6/Pods-kirakhmatullin_PW6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kirakhmatullin_PW6/Pods-kirakhmatullin_PW6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D8441A998293A9F9022CE96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kirakhmatullin_PW6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A501F0427482E1600B2A30F /* Sources */ = {
@@ -357,6 +418,7 @@
 		};
 		8A501F1D27482E1800B2A30F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 666033AFFAF1E41FC3E1E1E1 /* Pods-kirakhmatullin_PW6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -375,6 +437,7 @@
 		};
 		8A501F1E27482E1800B2A30F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F79A29A38222CCE10B58D5C /* Pods-kirakhmatullin_PW6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -415,7 +478,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8A501F802748393A00B2A30F /* XCRemoteSwiftPackageReference "example-package-dealer" */ = {
+		8A501F802748393A00B2A30F /* XCRemoteSwiftPackageReference "example-package-dealer.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/example-package-dealer.git";
 			requirement = {

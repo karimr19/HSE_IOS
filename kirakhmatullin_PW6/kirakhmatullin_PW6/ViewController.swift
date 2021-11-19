@@ -9,6 +9,7 @@ import UIKit
 import Accounts
 import MyLogger1
 import MyLogger2
+import MyLogger3
 
 class ViewController: UIViewController {
     var buttonFramework = UIButton()
@@ -85,6 +86,7 @@ class ViewController: UIViewController {
     }
 
     @objc func podButtonClicked() {
+        MyLogger3.log("Please")
     }
 }
 
