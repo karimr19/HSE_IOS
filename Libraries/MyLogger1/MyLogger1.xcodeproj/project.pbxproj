@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8A501F6D2748313700B2A30F /* MyLogger1.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A501F6B2748313700B2A30F /* MyLogger1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A501F742748315A00B2A30F /* MyLogger1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A501F732748315A00B2A30F /* MyLogger1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A501F682748313700B2A30F /* MyLogger1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyLogger1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A501F6B2748313700B2A30F /* MyLogger1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLogger1.h; sourceTree = "<group>"; };
 		8A501F6C2748313700B2A30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A501F732748315A00B2A30F /* MyLogger1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLogger1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				8A501F6B2748313700B2A30F /* MyLogger1.h */,
 				8A501F6C2748313700B2A30F /* Info.plist */,
+				8A501F732748315A00B2A30F /* MyLogger1.swift */,
 			);
 			path = MyLogger1;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					8A501F672748313700B2A30F = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A501F742748315A00B2A30F /* MyLogger1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		8A501F712748313700B2A30F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Karim.MyLogger1;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		8A501F722748313700B2A30F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
