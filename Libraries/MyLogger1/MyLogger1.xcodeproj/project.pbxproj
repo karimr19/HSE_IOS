@@ -16,6 +16,7 @@
 		8A501F6B2748313700B2A30F /* MyLogger1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLogger1.h; sourceTree = "<group>"; };
 		8A501F6C2748313700B2A30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A501F732748315A00B2A30F /* MyLogger1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLogger1.swift; sourceTree = "<group>"; };
+		8A501F83274841A800B2A30F /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLogger2; path = ../MyLogger2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +33,7 @@
 		8A501F5E2748313700B2A30F = {
 			isa = PBXGroup;
 			children = (
+				8A501F83274841A800B2A30F /* MyLogger2 */,
 				8A501F6A2748313700B2A30F /* MyLogger1 */,
 				8A501F692748313700B2A30F /* Products */,
 			);

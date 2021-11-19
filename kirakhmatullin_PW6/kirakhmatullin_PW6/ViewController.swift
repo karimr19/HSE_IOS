@@ -8,6 +8,7 @@
 import UIKit
 import Accounts
 import MyLogger1
+import MyLogger2
 
 class ViewController: UIViewController {
     var buttonFramework = UIButton()
@@ -76,7 +77,7 @@ class ViewController: UIViewController {
     }
 
     @objc func swiftPackageButtonClicked() {
-        print("Added random package")
+        MyLogger2.log("Me")
     }
 
     @objc func carthageButtonClicked() {

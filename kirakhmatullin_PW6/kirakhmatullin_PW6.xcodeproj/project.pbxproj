@@ -16,6 +16,7 @@
 		8A501F2127482EB600B2A30F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A501F2027482EB600B2A30F /* Accounts.framework */; };
 		8A501F7B2748323300B2A30F /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A501F7A274831BB00B2A30F /* MyLogger1.framework */; };
 		8A501F7C2748323300B2A30F /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A501F7A274831BB00B2A30F /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A501F85274841B800B2A30F /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 8A501F84274841B800B2A30F /* MyLogger2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A501F85274841B800B2A30F /* MyLogger2 in Frameworks */,
 				8A501F7B2748323300B2A30F /* MyLogger1.framework in Frameworks */,
 				8A501F2127482EB600B2A30F /* Accounts.framework in Frameworks */,
 			);
@@ -133,6 +135,9 @@
 			dependencies = (
 			);
 			name = kirakhmatullin_PW6;
+			packageProductDependencies = (
+				8A501F84274841B800B2A30F /* MyLogger2 */,
+			);
 			productName = kirakhmatullin_PW6;
 			productReference = 8A501F0827482E1600B2A30F /* kirakhmatullin_PW6.app */;
 			productType = "com.apple.product-type.application";
@@ -419,6 +424,13 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A501F84274841B800B2A30F /* MyLogger2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLogger2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A501F0027482E1600B2A30F /* Project object */;
 }
