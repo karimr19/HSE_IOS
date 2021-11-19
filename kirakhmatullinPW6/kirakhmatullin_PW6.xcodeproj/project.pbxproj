@@ -15,6 +15,7 @@
 		8A501E6C2747FC2A00B2A30F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A501E6B2747FC2A00B2A30F /* Accounts.framework */; };
 		8A501E8A2748015800B2A30F /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A501E892748011800B2A30F /* MyLogger1.framework */; };
 		8A501E8B2748015800B2A30F /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A501E892748011800B2A30F /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A501EC527480A7E00B2A30F /* MyLoger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 8A501EC427480A7E00B2A30F /* MyLoger2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8A501E5C2747DAAC00B2A30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A501E6B2747FC2A00B2A30F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		8A501E842748011800B2A30F /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../../HSE_IOS_materials/Libraries/MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
+		8A501EC327480A7300B2A30F /* MyLoger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLoger2; path = ../../HSE_IOS_materials/Libraries/MyLoger2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			files = (
 				8A501E8A2748015800B2A30F /* MyLogger1.framework in Frameworks */,
 				8A501E6C2747FC2A00B2A30F /* Accounts.framework in Frameworks */,
+				8A501EC527480A7E00B2A30F /* MyLoger2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +72,7 @@
 		8A501E422747DAAB00B2A30F = {
 			isa = PBXGroup;
 			children = (
+				8A501EC327480A7300B2A30F /* MyLoger2 */,
 				8A501E842748011800B2A30F /* MyLogger1.xcodeproj */,
 				8A501E4D2747DAAB00B2A30F /* kirakhmatullin_PW6 */,
 				8A501E4C2747DAAB00B2A30F /* Products */,
@@ -130,6 +134,9 @@
 			dependencies = (
 			);
 			name = kirakhmatullin_PW6;
+			packageProductDependencies = (
+				8A501EC427480A7E00B2A30F /* MyLoger2 */,
+			);
 			productName = kirakhmatullin_PW6;
 			productReference = 8A501E4B2747DAAB00B2A30F /* kirakhmatullin_PW6.app */;
 			productType = "com.apple.product-type.application";
@@ -407,6 +414,13 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A501EC427480A7E00B2A30F /* MyLoger2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLoger2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A501E432747DAAB00B2A30F /* Project object */;
 }
