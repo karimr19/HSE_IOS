@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A356504274A7ECF0049E38A /* UIView_Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A356503274A7ECF0049E38A /* UIView_Pin.swift */; };
 		8A3DA6702725CEF90042E159 /* VerticalAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DA66F2725CEF90042E159 /* VerticalAlarmView.swift */; };
 		8A3DA6722725D0A10042E159 /* VerticalAlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3DA6712725D0A10042E159 /* VerticalAlarmCell.swift */; };
 		8A8ADAC927258F46006BB844 /* EyeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8ADAC827258F46006BB844 /* EyeCell.swift */; };
@@ -20,12 +21,12 @@
 		8A95465D270D965400D97E23 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A95465C270D965400D97E23 /* StackViewController.swift */; };
 		8A95465F270D96B300D97E23 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A95465E270D96B300D97E23 /* TableViewController.swift */; };
 		8A954661270D96ED00D97E23 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A954660270D96ED00D97E23 /* CollectionViewController.swift */; };
-		8A954663270DAC7900D97E23 /* UIView_Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A954662270DAC7900D97E23 /* UIView_Pin.swift */; };
 		8A954666270DB2DF00D97E23 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A954665270DB2DF00D97E23 /* AlarmView.swift */; };
 		8A954668270DC9D800D97E23 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A954667270DC9D800D97E23 /* SeparatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A356503274A7ECF0049E38A /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_Pin.swift; path = ../../../HSE_IOS_materials/UIView_Pin.swift; sourceTree = "<group>"; };
 		8A3DA66F2725CEF90042E159 /* VerticalAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlarmView.swift; sourceTree = "<group>"; };
 		8A3DA6712725D0A10042E159 /* VerticalAlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlarmCell.swift; sourceTree = "<group>"; };
 		8A8ADAC827258F46006BB844 /* EyeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeCell.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		8A95465C270D965400D97E23 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		8A95465E270D96B300D97E23 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8A954660270D96ED00D97E23 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		8A954662270DAC7900D97E23 /* UIView_Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_Pin.swift; path = ../../../../Downloads/UIView_Pin.swift; sourceTree = "<group>"; };
 		8A954665270DB2DF00D97E23 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		8A954667270DC9D800D97E23 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,9 +84,9 @@
 		8A954647270D8FC300D97E23 /* kirakhmatullinPW3 */ = {
 			isa = PBXGroup;
 			children = (
+				8A356503274A7ECF0049E38A /* UIView_Pin.swift */,
 				8A8ADACA27259BD0006BB844 /* Model */,
 				8A954664270DB19B00D97E23 /* View */,
-				8A954662270DAC7900D97E23 /* UIView_Pin.swift */,
 				8A954648270D8FC300D97E23 /* AppDelegate.swift */,
 				8A95464A270D8FC300D97E23 /* SceneDelegate.swift */,
 				8A95464C270D8FC300D97E23 /* ViewController.swift */,
@@ -182,8 +182,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A356504274A7ECF0049E38A /* UIView_Pin.swift in Sources */,
 				8A954668270DC9D800D97E23 /* SeparatorView.swift in Sources */,
-				8A954663270DAC7900D97E23 /* UIView_Pin.swift in Sources */,
 				8A954661270D96ED00D97E23 /* CollectionViewController.swift in Sources */,
 				8A954666270DB2DF00D97E23 /* AlarmView.swift in Sources */,
 				8A95464D270D8FC300D97E23 /* ViewController.swift in Sources */,
